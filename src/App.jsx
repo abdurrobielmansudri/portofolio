@@ -3,7 +3,7 @@ import {
   FiGithub, FiLinkedin, FiMail, FiExternalLink, 
   FiDownload, FiCode, FiLayers, FiTerminal, FiSend, FiBriefcase 
 } from 'react-icons/fi';
-import { FaWhatsapp } from 'react-icons/fa'; // Diimpor untuk ikon WhatsApp
+import { FaWhatsapp } from 'react-icons/fa';
 
 export default function Portfolio() {
   const [activeTab, setActiveTab] = useState('All Projects');
@@ -12,21 +12,28 @@ export default function Portfolio() {
     {
       title: "Videobelajar - React Front-End",
       category: "Web & Apps",
-      desc: "Platform kursus online interaktif lengkap dengan sistem autentikasi, pemilihan kelas, hingga alur checkout pembayaran.",
+      desc: "Platform kursus online interaktif lengkap dengan sistem autentikasi, pemilihan kelas, hingga alur checkout pembayaran berbasis React & Vite.",
       tags: ["React.js", "Vite", "Tailwind CSS", "Axios"],
       link: "https://github.com/abdurrobielmansudri/videobelajar-react"
     },
     {
+      title: "To-Do List App (React)",
+      category: "Web & Apps",
+      desc: "Aplikasi manajemen tugas harian interaktif untuk menambah, menghapus, dan menandai status tugas secara real-time menggunakan state management React.",
+      tags: ["React.js", "JavaScript", "Tailwind CSS", "Vite"],
+      link: "https://github.com/abdurrobielmansudri/abdurrobi-20001-todolist-Mission"
+    },
+    {
       title: "Edu-Course API Advance",
       category: "Web & Apps",
-      desc: "REST API tingkat lanjut menggunakan Express.js dan MySQL, dilengkapi JWT Authentication, Nodemailer, dan Multer upload.",
-      tags: ["Node.js", "Express.js", "MySQL", "JWT"],
+      desc: "REST API tingkat lanjut menggunakan Express.js dan MySQL, dilengkapi JWT Authentication, Nodemailer, dan Multer upload file.",
+      tags: ["Node.js", "Express.js", "MySQL", "JWT", "Multer"],
       link: "https://github.com/abdurrobielmansudri/edu-course-api-advance"
     },
     {
       title: "Edu-Course API Basic",
       category: "Web & Apps",
-      desc: "Sistem backend dasar untuk pengelolaan data kursus dengan operasi CRUD penuh yang terhubung ke database relasional.",
+      desc: "Sistem backend dasar untuk pengelolaan data kursus dengan operasi CRUD penuh yang terhubung ke database relasional MySQL.",
       tags: ["Express.js", "MySQL", "Postman", "JavaScript"],
       link: "https://github.com/abdurrobielmansudri/edu-course-api"
     }
@@ -57,7 +64,7 @@ export default function Portfolio() {
             href="#contact" 
             className="bg-black text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-stone-800 transition-all duration-200 shadow-sm hover:scale-105 active:scale-95"
           >
-            HIRE ME 
+            HIRE ME ↗
           </a>
         </div>
       </header>
@@ -72,7 +79,7 @@ export default function Portfolio() {
             Hi, I'm <br /><span className="text-amber-700 italic">Abdurrobi.</span>
           </h1>
           <p className="text-stone-600 text-lg leading-relaxed mb-8 max-w-xl">
-            Lulusan Teknik Informatika Universitas Pamulang yang memadukan kedisiplinan profesional perbankan dengan keahlian pengembangan aplikasi web modern.
+            Lulusan S1 Teknik Informatika Universitas Pamulang yang berfokus membangun dan mengembangkan aplikasi web modern dari sisi antarmuka hingga server.
           </p>
           <div className="flex flex-wrap gap-4">
             <a 
@@ -117,18 +124,18 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-2 gap-8 text-stone-600">
             <div>
               <h3 className="text-black font-semibold mb-2 flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-amber-700"></span> Who Am I
+                <span className="w-2 h-2 rounded-full bg-amber-700"></span> Profile & Background
               </h3>
               <p className="text-sm leading-relaxed">
-                Aku lulusan Teknik Informatika Universitas Pamulang, berasal dari Tasikmalaya, dan berpengalaman bekerja sebagai satpam perbankan di BNI BSD selama 3 tahun sambil merampungkan studi. Pengalaman ini membentuk mental kerja keras, ketelitian, dan integritas tinggi.
+                Fresh graduate S1 Teknik Informatika Universitas Pamulang asal Tasikmalaya yang memiliki ketertarikan mendalam pada rekayasa perangkat lunak, arsitektur web, dan pemecahan masalah logika pemrograman.
               </p>
             </div>
             <div>
               <h3 className="text-black font-semibold mb-2 flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-amber-700"></span> My Approach
+                <span className="w-2 h-2 rounded-full bg-amber-700"></span> Technical Focus
               </h3>
               <p className="text-sm leading-relaxed">
-                Melalui bootcamp Full-Stack Development Harisenin, aku mengombinasikan latar belakang profesional dan keterampilan teknis modern (React.js, Node.js, Express.js, MySQL) untuk membangun solusi web yang aman, terstruktur, dan solutif.
+                Aktif mendalami pengembangan aplikasi web modern melalui bootcamp intensif Full-Stack Development, menguasai ekosistem JavaScript (React.js, Node.js, Express.js) serta manajemen database relasional MySQL.
               </p>
             </div>
           </div>
@@ -140,62 +147,32 @@ export default function Portfolio() {
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-[220px_1fr] gap-12">
           <div>
             <span className="text-xs font-bold uppercase tracking-widest text-stone-400">CAREER PATH</span>
-            <h2 className="text-3xl font-serif mt-1">Work Experience</h2>
+            <h2 className="text-3xl font-serif mt-1">Experience & Training</h2>
           </div>
           <div className="space-y-8">
-            {/* Experience 1 */}
             <div className="bg-white p-8 rounded-2xl border border-stone-200 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1">
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
                 <div>
                   <span className="text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200">
-                    Professional Experience
+                    Bootcamp Intensive
                   </span>
-                  <h3 className="font-serif text-2xl font-bold mt-2">Security Guard / Satpam</h3>
-                  <p className="text-stone-600 font-medium text-sm">PT Bank Negara Indonesia (Persero) Tbk — Branch BSD</p>
-                </div>
-                <span className="text-xs font-mono text-stone-500 bg-stone-100 px-3 py-1 rounded-lg self-start">
-                  3 Tahun Pengabdian
-                </span>
-              </div>
-              <p className="text-sm text-stone-600 leading-relaxed mb-4">
-                Bertanggung jawab penuh atas keamanan area operasional perbankan, ketertiban fasilitas, serta memberikan pelayanan prima kepada nasabah dengan standar operasional prosedur (SOP) perbankan yang ketat.
-              </p>
-              <ul className="list-disc list-inside text-sm text-stone-600 space-y-1.5 mb-6">
-                <li>Menjaga keamanan dan ketertiban area kantor cabang serta memastikan kenyamanan nasabah.</li>
-                <li>Menerapkan kedisiplinan tingkat tinggi, kewaspadaan, dan komunikasi efektif dalam pelayanan publik.</li>
-                <li>Menjalankan manajemen waktu yang disiplin dalam menyeimbangkan jam kerja operasional bank dengan perkuliahan S1 Teknik Informatika.</li>
-              </ul>
-              <div className="flex flex-wrap gap-2 pt-2 border-t border-stone-100">
-                {['Security Operations', 'Customer Service', 'Discipline & Responsibility', 'SOP Compliance'].map((item, idx) => (
-                  <span key={idx} className="bg-stone-100 text-stone-700 text-xs px-3 py-1 rounded-md font-medium">{item}</span>
-                ))}
-              </div>
-            </div>
-
-            {/* Experience 2 / Bootcamp */}
-            <div className="bg-white p-8 rounded-2xl border border-stone-200 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1">
-              <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
-                <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200">
-                    Bootcamp & Training
-                  </span>
-                  <h3 className="font-serif text-2xl font-bold mt-2">Full-Stack Web Development Student</h3>
+                  <h3 className="font-serif text-2xl font-bold mt-2">Full-Stack Web Developer Trainee</h3>
                   <p className="text-stone-600 font-medium text-sm">Harisenin Bootcamp (Batch 20)</p>
                 </div>
                 <span className="text-xs font-mono text-stone-500 bg-stone-100 px-3 py-1 rounded-lg self-start">
-                  Intensive Program
+                  2026
                 </span>
               </div>
               <p className="text-sm text-stone-600 leading-relaxed mb-4">
-                Menyelesaikan program pelatihan intensif pengembangan web penuh dari sisi antarmuka pengguna hingga sistem peladen dan database.
+                Menyelesaikan program pelatihan intensif pengembangan web end-to-end, membangun berbagai proyek nyata dari sisi antarmuka hingga backend server.
               </p>
               <ul className="list-disc list-inside text-sm text-stone-600 space-y-1.5 mb-6">
-                <li>Membangun aplikasi web interaktif menggunakan React.js, Vite, dan Tailwind CSS.</li>
-                <li>Mengembangkan REST API handal dengan Node.js, Express.js, dan database MySQL.</li>
-                <li>Mengimplementasikan fitur keamanan seperti JWT Authentication, hashing password bcrypt, Nodemailer, dan Multer.</li>
+                <li>Merancang dan membangun antarmuka web responsif menggunakan React.js, Vite, dan Tailwind CSS.</li>
+                <li>Mengembangkan RESTful API handal menggunakan Express.js, Node.js, dan MySQL.</li>
+                <li>Menerapkan sistem keamanan autentikasi JWT, hashing password dengan bcrypt, serta integrasi layanan pihak ketiga (Nodemailer, Multer).</li>
               </ul>
               <div className="flex flex-wrap gap-2 pt-2 border-t border-stone-100">
-                {['React.js', 'Express.js', 'MySQL', 'REST API', 'Git & GitHub'].map((item, idx) => (
+                {['React.js', 'Express.js', 'MySQL', 'REST API', 'JavaScript', 'Git'].map((item, idx) => (
                   <span key={idx} className="bg-stone-100 text-stone-700 text-xs px-3 py-1 rounded-md font-medium">{item}</span>
                 ))}
               </div>
@@ -209,17 +186,17 @@ export default function Portfolio() {
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-[220px_1fr] gap-12">
           <div>
             <span className="text-xs font-bold uppercase tracking-widest text-stone-400">MY CAPABILITIES</span>
-            <h2 className="text-3xl font-serif mt-1">What I Can Do</h2>
+            <h2 className="text-3xl font-serif mt-1">Tech Stack</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-[#fcfbf9] p-8 rounded-2xl border border-stone-200 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1">
               <div className="text-amber-700 text-2xl mb-4 font-mono">01</div>
-              <h3 className="font-bold text-lg mb-2">Web Development & Engineering</h3>
+              <h3 className="font-bold text-lg mb-2">Front-End Development</h3>
               <p className="text-sm text-stone-600 mb-4 leading-relaxed">
-                Membangun dan menguji sistem aplikasi digital fungsional, dari arsitektur basis data relasional hingga platform web interaktif berbasis React.
+                Membangun tampilan antarmuka web yang interaktif, dinamis, dan responsif menggunakan pustaka dan framework modern.
               </p>
               <div className="flex flex-wrap gap-2 pt-2">
-                {['React.js', 'Node.js', 'Express.js', 'MySQL', 'JavaScript', 'Tailwind'].map((item, idx) => (
+                {['React.js', 'Vite', 'JavaScript (ES6+)', 'Tailwind CSS', 'HTML5', 'CSS3'].map((item, idx) => (
                   <span key={idx} className="bg-white text-stone-700 text-xs px-3 py-1 rounded-md font-medium border border-stone-200">{item}</span>
                 ))}
               </div>
@@ -227,12 +204,12 @@ export default function Portfolio() {
 
             <div className="bg-[#fcfbf9] p-8 rounded-2xl border border-stone-200 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1">
               <div className="text-amber-700 text-2xl mb-4 font-mono">02</div>
-              <h3 className="font-bold text-lg mb-2">Digital Operations & Support</h3>
+              <h3 className="font-bold text-lg mb-2">Back-End & Database</h3>
               <p className="text-sm text-stone-600 mb-4 leading-relaxed">
-                Mendukung efisiensi operasional harian melalui pengelolaan data terstruktur, ketelitian administratif, kedisiplinan kerja, dan komunikasi profesional.
+                Mengembangkan logika server, perancangan RESTful API, sistem autentikasi, serta pengelolaan database relasional.
               </p>
               <div className="flex flex-wrap gap-2 pt-2">
-                {['System Testing', 'Data Management', 'Professional Ethics', 'Git & GitHub'].map((item, idx) => (
+                {['Node.js', 'Express.js', 'MySQL', 'JWT', 'Postman', 'Git & GitHub'].map((item, idx) => (
                   <span key={idx} className="bg-white text-stone-700 text-xs px-3 py-1 rounded-md font-medium border border-stone-200">{item}</span>
                 ))}
               </div>
@@ -303,18 +280,17 @@ export default function Portfolio() {
           <div>
             <h2 className="text-4xl md:text-5xl font-serif mb-6 leading-tight">Let's Work Together.</h2>
             <p className="text-stone-600 text-sm md:text-base leading-relaxed mb-8">
-              Terbuka untuk peluang kolaborasi dan kesempatan karier di bidang Full Stack Development, Software Engineering, maupun operasional digital profesional.
+              Terbuka untuk peluang kesempatan karier dan kolaborasi di bidang Software Engineering, Full-Stack Development, maupun Front-End/Back-End role.
             </p>
             <div className="flex flex-wrap gap-4">
               <a 
-                href="mailto:obetelman@gmail.com"
+                href="mailto:obetelamn@gmail.com"
                 className="bg-black text-white px-6 py-3 rounded-xl text-sm font-medium flex items-center gap-2 hover:bg-stone-800 transition-all duration-200 shadow-sm hover:scale-105 active:scale-95"
               >
                 <FiMail /> Send Email
               </a>
-              {/* Tombol WhatsApp Interaktif */}
               <a 
-                href="https://wa.me/62895339361899" 
+                href="https://wa.me/6281234567890" 
                 target="_blank" 
                 rel="noreferrer"
                 className="bg-emerald-600 text-white px-6 py-3 rounded-xl text-sm font-medium flex items-center gap-2 hover:bg-emerald-700 transition-all duration-200 shadow-sm hover:scale-105 active:scale-95"
@@ -336,13 +312,12 @@ export default function Portfolio() {
             <div className="bg-[#fcfbf9] p-5 rounded-xl border border-stone-200 flex items-center justify-between shadow-xs transition-transform duration-200 hover:translate-x-1">
               <div className="flex items-center gap-3">
                 <FiMail className="text-amber-700" size={20} />
-                <span className="text-sm font-medium text-stone-700">obetelman@gmail.com</span>
+                <span className="text-sm font-medium text-stone-700">obetelamn@gmail.com</span>
               </div>
               <span className="text-xs text-stone-400 font-mono">01</span>
             </div>
-            {/* Kartu Informasi WhatsApp */}
             <a 
-              href="https://wa.me/62895339361899" 
+              href="https://wa.me/6281234567890" 
               target="_blank" 
               rel="noreferrer"
               className="bg-[#fcfbf9] p-5 rounded-xl border border-stone-200 flex items-center justify-between shadow-xs transition-transform duration-200 hover:translate-x-1 block cursor-pointer group"
