@@ -284,13 +284,13 @@ export default function Portfolio() {
             </p>
             <div className="flex flex-wrap gap-4">
               <a 
-                href="mailto:obetelamn@gmail.com"
+                href="mailto:obetelman@gmail.com"
                 className="bg-black text-white px-6 py-3 rounded-xl text-sm font-medium flex items-center gap-2 hover:bg-stone-800 transition-all duration-200 shadow-sm hover:scale-105 active:scale-95"
               >
                 <FiMail /> Send Email
               </a>
               <a 
-                href="https://wa.me/6281234567890" 
+                href="https://wa.me/62895339361899" 
                 target="_blank" 
                 rel="noreferrer"
                 className="bg-emerald-600 text-white px-6 py-3 rounded-xl text-sm font-medium flex items-center gap-2 hover:bg-emerald-700 transition-all duration-200 shadow-sm hover:scale-105 active:scale-95"
@@ -312,12 +312,12 @@ export default function Portfolio() {
             <div className="bg-[#fcfbf9] p-5 rounded-xl border border-stone-200 flex items-center justify-between shadow-xs transition-transform duration-200 hover:translate-x-1">
               <div className="flex items-center gap-3">
                 <FiMail className="text-amber-700" size={20} />
-                <span className="text-sm font-medium text-stone-700">obetelamn@gmail.com</span>
+                <span className="text-sm font-medium text-stone-700">obetelman@gmail.com</span>
               </div>
               <span className="text-xs text-stone-400 font-mono">01</span>
             </div>
             <a 
-              href="https://wa.me/6281234567890" 
+              href="https://wa.me/62895339361899" 
               target="_blank" 
               rel="noreferrer"
               className="bg-[#fcfbf9] p-5 rounded-xl border border-stone-200 flex items-center justify-between shadow-xs transition-transform duration-200 hover:translate-x-1 block cursor-pointer group"
