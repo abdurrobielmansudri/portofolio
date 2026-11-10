@@ -75,7 +75,7 @@ export default function Portfolio() {
           </nav>
 
           <div className="flex items-center gap-3">
-            {/* TOMBOL TOGGLE */}
+            {/* TOMBOL TOGGLE THEME */}
             <button 
               onClick={toggleDarkMode}
               className={`p-2.5 rounded-full border ${darkMode ? 'border-stone-700 bg-stone-900 text-yellow-400' : 'border-stone-300 bg-white text-stone-800'} hover:scale-105 transition-all duration-200 shadow-xs cursor-pointer flex items-center justify-center w-10 h-10`}
@@ -311,13 +311,13 @@ export default function Portfolio() {
             </p>
             <div className="flex flex-wrap gap-4">
               <a 
-                href="mailto:obetelamn@gmail.com"
+                href="mailto:obetelaman@gmail.com"
                 className={`${darkMode ? 'bg-white text-black hover:bg-stone-200' : 'bg-black text-white hover:bg-stone-800'} px-6 py-3 rounded-xl text-sm font-medium flex items-center gap-2 transition-all duration-200 shadow-sm hover:scale-105 active:scale-95`}
               >
                 <FiMail /> Send Email
               </a>
               <a 
-                href="https://wa.me/6281234567890" 
+                href="https://wa.me/62895339361899" 
                 target="_blank" 
                 rel="noreferrer"
                 className="bg-emerald-600 text-white px-6 py-3 rounded-xl text-sm font-medium flex items-center gap-2 hover:bg-emerald-700 transition-all duration-200 shadow-sm hover:scale-105 active:scale-95"
@@ -332,6 +332,14 @@ export default function Portfolio() {
               >
                 <FiGithub /> GitHub Profile
               </a>
+              <a 
+                href="https://www.linkedin.com/in/abdurrobi-elman-sudri-b71878398"
+                target="_blank"
+                rel="noreferrer"
+                className="bg-[#0a66c2] text-white px-6 py-3 rounded-xl text-sm font-medium flex items-center gap-2 hover:bg-[#084e96] transition-all duration-200 shadow-sm hover:scale-105 active:scale-95"
+              >
+                <FiLinkedin /> LinkedIn Profile
+              </a>
             </div>
           </div>
 
@@ -339,12 +347,12 @@ export default function Portfolio() {
             <div className={`${darkMode ? 'bg-stone-950 border-stone-800 text-stone-300' : 'bg-[#fcfbf9] border-stone-200 text-stone-700'} p-5 rounded-xl border flex items-center justify-between shadow-xs`}>
               <div className="flex items-center gap-3">
                 <FiMail className="text-amber-700" size={20} />
-                <span className="text-sm font-medium">obetelamn@gmail.com</span>
+                <span className="text-sm font-medium">obetelman@gmail.com</span>
               </div>
               <span className="text-xs text-stone-400 font-mono">01</span>
             </div>
             <a 
-              href="https://wa.me/6281234567890" 
+              href="https://wa.me/62895339361899" 
               target="_blank" 
               rel="noreferrer"
               className={`${darkMode ? 'bg-stone-950 border-stone-800 text-stone-300' : 'bg-[#fcfbf9] border-stone-200 text-stone-700'} p-5 rounded-xl border flex items-center justify-between shadow-xs block cursor-pointer group`}
@@ -362,6 +370,18 @@ export default function Portfolio() {
               </div>
               <span className="text-xs text-stone-400 font-mono">03</span>
             </div>
+            <a 
+              href="https://www.linkedin.com/in/abdurrobi-elman-sudri-b71878398"
+              target="_blank"
+              rel="noreferrer"
+              className={`${darkMode ? 'bg-stone-950 border-stone-800 text-stone-300' : 'bg-[#fcfbf9] border-stone-200 text-stone-700'} p-5 rounded-xl border flex items-center justify-between shadow-xs block cursor-pointer group`}
+            >
+              <div className="flex items-center gap-3">
+                <FiLinkedin className="text-[#0a66c2]" size={20} />
+                <span className="text-sm font-medium group-hover:text-[#0a66c2] transition-colors">linkedin.com/in/abdurrobi-elman-sudri-b71878398</span>
+              </div>
+              <span className="text-xs text-stone-400 font-mono">04</span>
+            </a>
           </div>
         </div>
       </section>
